@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def cos_sin_tall_array():
+def ex1_cos_sin_tall_array():
     linspace = np.linspace(0, 1)
     cos = np.cos(linspace)
     sin = np.sin(linspace)
@@ -9,7 +9,7 @@ def cos_sin_tall_array():
     return np.dstack((cos, sin))
 
 
-def sum_rows_and_columns():
+def ex2_sum_rows_and_columns():
     random_matrix = np.random.rand(3, 5)
 
     entries_sum = random_matrix.sum()
@@ -19,11 +19,7 @@ def sum_rows_and_columns():
     return entries_sum, row_sum, column_sum
 
 
-def sort_matrix_second_column():
+def ex3_sort_matrix_second_column():
     random_matrix = np.random.rand(5, 5)
 
     return random_matrix[random_matrix[:, 1].argsort()]
-
-
-if __name__ == '__main__':
-    print(sort_matrix_second_column())

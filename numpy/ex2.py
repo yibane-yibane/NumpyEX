@@ -3,7 +3,7 @@ import matplotlib.pylab as plt
 from scipy import special
 
 
-def checkerboard_array():
+def ex1_checkerboard_array():
     vector = [1, 2, 3]
     matrix = np.ones((3, 3))
 
@@ -16,23 +16,19 @@ def checkerboard_array():
     print(matrix_matrix)
 
 
-def plot_function():
+def ex2_plot_function():
     x_array = np.linspace(-1, 1, 250)
     y_array = np.power(x_array, 2) * np.sin(1/np.power(x_array, 2)) + x_array
     plt.plot(x_array, y_array)
     plt.show()
 
 
-def plot_function_2():
+def ex3_plot_function_2():
     x = np.linspace(5, 25)
     y = np.absolute(1 - (1 / (1 + np.power(x, 2))) / (1 / np.power(x, 2)))
     plt.semilogy(x, y)
     plt.show()
 
 
-def gift():
+def ex4_gift():
     print(special.pbdv(5, 2))
-
-
-if __name__ == '__main__':
-    gift()

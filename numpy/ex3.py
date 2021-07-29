@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pylab as plt
 
 
-def plot():
+def ex1_plot():
     x = np.arange(-np.pi, np.pi)
     y = np.arange(-np.pi, np.pi)
 
@@ -13,9 +13,5 @@ def plot():
     plt.show()
 
 
-def matrix_row_plus_column():
+def ex2_matrix_row_plus_column():
     return np.vstack(range(5)) + np.arange(5)
-
-
-if __name__ == '__main__':
-    print(matrix_row_plus_column())
