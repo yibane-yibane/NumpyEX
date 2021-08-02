@@ -6,7 +6,7 @@ def ex1_create_subdivision(from_number=-1.3, to_number=2.5, subdivisions=64):
 
 
 def ex2_create_cycling_array(cycle=[1, 2, 3], n=3):
-    return np.array(cycle * n)
+    return np.tile(cycle, n)
 
 
 def ex3_create_odd_array(start=1, finish=20, addition=2):
@@ -14,11 +14,8 @@ def ex3_create_odd_array(start=1, finish=20, addition=2):
 
 
 def ex4_framed_one_matrix():
-    matrix = np.zeros((10, 10))
-    matrix[0:10, 0] = 1
-    matrix[0:10, 9] = 1
-    matrix[0, 0:10] = 1
-    matrix[9, 0:10] = 1
+    matrix = np.ones((10,10))
+    matrix[1:9, 1:9] = 0
 
     return matrix
 

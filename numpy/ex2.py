@@ -18,14 +18,14 @@ def ex1_checkerboard_array():
 
 def ex2_plot_function():
     x_array = np.linspace(-1, 1, 250)
-    y_array = np.power(x_array, 2) * np.sin(1/np.power(x_array, 2)) + x_array
+    y_array = x_array**2 * np.sin(1/ x_array**2) + x_array
     plt.plot(x_array, y_array)
     plt.show()
 
 
 def ex3_plot_function_2():
     x = np.linspace(5, 25)
-    y = np.absolute(1 - (1 / (1 + np.power(x, 2))) / (1 / np.power(x, 2)))
+    y = np.absolute(1 - (1 / (1 + x**2)) / (1 / x**2))
     plt.semilogy(x, y)
     plt.show()
 
