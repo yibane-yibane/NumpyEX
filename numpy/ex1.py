@@ -1,5 +1,5 @@
 import numpy as np
-dsa
+
 def ex1_create_subdivision(from_number=-1.3, to_number=2.5, subdivisions=64):
     return np.linspace(from_number, to_number, subdivisions)
 
