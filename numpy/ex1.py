@@ -25,5 +25,4 @@ def checkerboard_array():
     checkerboard[::2, 1::2] = 0
 
     return checkerboard
-jh
 
