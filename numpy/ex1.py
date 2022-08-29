@@ -26,4 +26,3 @@ def checkerboard_array():
 
     return checkerboard
 jhg
-njhki
