@@ -28,3 +28,4 @@ def checkerboard_array():
     return checkerboard
 
 
+
