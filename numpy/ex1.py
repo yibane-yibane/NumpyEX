@@ -12,6 +12,7 @@ def ex3_create_odd_array(start=1, finish=20, addition=2):
     return np.arange(start, finish, addition)
 
 
+
 def ex4_framed_one_matrix():
     matrix = np.ones((10,10))
     matrix[1:9, 1:9] = 0
